@@ -5,7 +5,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "react-scripts build",
-    "deploy": "echo 'To setup deployment run: npm run setup-deploy'",
+    "deploy": "echo 'You have no deployment tool configured'",
     "setup-deploy": "app-app --deploy && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -25,6 +25,7 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "json": "^10.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -35,5 +36,6 @@
     "prettier": "^2.2.1",
     "stylelint": "^13.11.0",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "homepage": ""
 }
