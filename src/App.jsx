@@ -15,11 +15,11 @@ handleClickFlag = () => {
   
   render() {
     return (
-    <div>
+    <main>
       <h1>Minesweeper</h1>
       <button className="newGame">New Game</button>
       <Game></Game>
-    </div>
+    </main>
     )
   }
 }

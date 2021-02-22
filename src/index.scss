@@ -16,13 +16,26 @@ body {
   margin-bottom: 15rem;
 }
 
-div.boardStructure {
-  padding: 0.1rem;
-  color: green;
-  margin: 0.5rem;
+ul {
+  list-style: none;
+  padding: 0;
+  color: gray;
+  margin: 0;
+  display: grid;
   border: thick;
   border-color: green;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
+
+/*li.cellLi {
+  margin: 0;
+  padding: 0.5;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
 
 h1 {
   margin: 0;
@@ -36,9 +49,4 @@ button.newGame {
   padding: auto;
   display: flex;
   margin-left: 2.5rem;
-}
-
-li {
-  display: grid;
-  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 }

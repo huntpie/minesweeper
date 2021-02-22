@@ -3,10 +3,10 @@ import axios from 'axios'
 
 export class Game extends React.Component {
   state = {
-    "id": 1,
-    "board": [
+    id: 1,
+    board: [
       [" ", " ", " ", " ", " ", " ", " ", " "],
-      [" ", " ", " ", " ", " ", " ", " ", " "],
+      [" ", " ", " ", "", " ", " ", " ", " "],
       [" ", " ", " ", " ", " ", " ", " ", " "],
       [" ", " ", " ", " ", " ", " ", " ", " "],
       [" ", " ", " ", " ", " ", " ", " ", " "],
@@ -14,16 +14,23 @@ export class Game extends React.Component {
       [" ", " ", " ", " ", " ", " ", " ", " "],
       [" ", " ", " ", " ", " ", " ", " ", " "],
     ],
-    "state": "new",
-    "mines": 10,
-    "difficulty": 0
+    state: "new",
+    mines: 10,
+    difficulty: 0
   }
   
   render(){
+
+    const gameGrid = this.state.board.map((row, rowIndex) => {
+      return row.map((cell, columnIndex) => {
+          return <li className="cellLi" key={columnIndex}>{cell}</li>
+        })
+      
+    })
     return (
-      <div className="boardStructure">
-    {this.state.board}
-    </div>
+      <ul className="boardStructure">
+      {gameGrid}
+      </ul>
     )
   }
 }
