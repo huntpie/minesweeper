@@ -9,4 +9,36 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+div.boardStructure {
+  padding: 0.1rem;
+  color: green;
+  margin: 0.5rem;
+  border: thick;
+  border-color: green;
+}
+
+h1 {
+  margin: 0;
+  padding: auto;
+  text-align: center;
+}
+
+button.newGame {
+  margin: 0;
+  text-align: center;
+  padding: auto;
+  display: flex;
+  margin-left: 2.5rem;
+}
+
+li {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
