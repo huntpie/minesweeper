@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export class Game extends React.Component {
   state = {
-    id: 1,
+    id: 0,
     board: [
       [" ", " ", " ", " ", " ", " ", " ", " "],
       [" ", " ", " ", "", " ", " ", " ", " "],

@@ -5,14 +5,6 @@ import { Board } from './components/Board'
 
 
 export class App extends Component {
-
-  
-handleClickFlag = () => {
-  const flag = this.state
-}
-
-  
-  
   render() {
     return (
     <main>
